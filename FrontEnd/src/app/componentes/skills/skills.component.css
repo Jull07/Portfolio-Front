@@ -1,0 +1,10 @@
+.row {
+    background-color: rgb(202, 228, 241);
+    padding: 20px;
+}
+#Skills {
+    font-style: oblique;
+    font-family: fantasy;
+    color: rgb(75, 73, 73);
+    margin-left: 500px;
+}

@@ -1,0 +1,28 @@
+ #mainNav {
+   background-color: rgb(116, 169, 219);
+    }
+   
+    #Contact {
+        
+        font-style: oblique;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        
+    }
+#Info {
+    font-family: cursive;
+    font-style: oblique;
+    color: rgb(239, 250, 240);
+}
+#navbarHeader {
+   background-color: rgb(116, 169, 219);
+}
+#Botones {
+    margin-left:  150px;
+}
+html,
+body {
+
+background-color:rgb(174, 210, 243);
+overflow-x: hidden;
+}

@@ -1,0 +1,45 @@
+<div class="row justify-content-center mt-3">
+  
+ 
+           
+          
+        
+               <div class="col" >
+                <div class="card shadow-sm">
+                  <div class="card text-center border-info" id="Educacion">
+                      <div class="card-body">
+                         <img src="../../../assets/Educacion.jpg" width="300" height="300"
+                         class="img-fluid">
+               <div class="row">
+                <h1>Educacion</h1>
+                <div class="col-lg-2" style="text-align: center;">
+                   <button type="button"  class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged" style="position:absolute; left: 73%; margin-top: 5%; " >
+            Agregar Educacion
+        </button>
+                </div>
+            
+                <div class="col lg 1"></div>
+                <div class="col-lg-11">
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let Educacion of educacion">
+                                <td>
+                                    <h2 id="EDCSS">{{Educacion.nombreE}}</h2>
+                                </td>
+                                <td id="DESCSS">{{Educacion.descripcionE}}</td>
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}" style="background-color: rgb(255, 255, 255);">
+                                        <i class="bi bi-pencil-fill" ></i> EDITAR</button>
+                                </td>
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                                        <i class="bi bi-trash-fill"></i> BORRAR</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+            </div>
+            
+    

@@ -1,0 +1,21 @@
+
+  
+
+    <div class="collapse" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4" >
+            <h4 class="text-white">Informacion</h4>
+            <p class id="Info" >Este es un Portfolio hecho como prueba final para el curso de Argentina Programa.</p>
+          </div>
+          
+          <div class="col-sm-4 offset-md-1 py-4" id="ingreso">
+            <a href="/login" class="btn btn-primary my-2"  style="background-color: rgb(70, 85, 95);"(click)="login()" *ngIf="!isLogged">Ingresa</a>
+            <a  href= "/" class="btn btn-primary my-2"  style="background-color: rgb(70, 85, 95);" (click)="onLogOut()" *ngIf="isLogged" >Cerrar Sesion</a>
+        
+           
+          </div>
+        </div>
+      </div>
+    </div>
+   
