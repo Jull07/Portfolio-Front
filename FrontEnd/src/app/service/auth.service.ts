@@ -5,24 +5,28 @@ import { JwtDto } from '../model/jwt-dto';
 import { LoginUsuario } from '../model/login-usuario';
 import { NuevoUsuario } from '../model/nuevo-usuario';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  logout() {
-    throw new Error('Method not implemented.');
-  }
 
-  authURL = 'http://localhost:8080/auth/';
+  authURL = 'https://backend-bl22.onrender.com/auth/';
+
+
+
+
+
+
 
   constructor(private httpClient: HttpClient) { }
 
 
-  public nuevo (nuevoUsuario: NuevoUsuario): Observable<any> {
-    return this.httpClient.post<any>(this.authURL + 'nuevo', nuevoUsuario);
+  public nuevo(nuevoUsuario: NuevoUsuario): Observable<any> {
+    return this.httpClient.post<any>(this.authURL + `nuevo`, nuevoUsuario);
   }
-  
-  public login (loginUsuario: LoginUsuario): Observable<JwtDto>{
-    return this.httpClient.post<JwtDto>(this.authURL + 'login', loginUsuario)
+
+  public login(loginUsuario: LoginUsuario): Observable<JwtDto> {
+    return this.httpClient.post<JwtDto>(this.authURL + `login`, loginUsuario)
   }
 }
